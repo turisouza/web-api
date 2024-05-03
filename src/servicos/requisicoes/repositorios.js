@@ -15,12 +15,12 @@ export async function pegarRepositoriosDoUsuario(id) {
     }
 }
 
-export async function atualizarRepositoriosDoUsuario(postID, nome, data, id) {
+export async function atualizarRepositoriosDoUsuario(postId, nome, data, id) {
     try {
         await api.put(`/repos/${id}`, {
             name: nome,
             data: data,
-            postID: postID,
+            postId: postId,
             id: id
         })
         return "Sucesso"
